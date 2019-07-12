@@ -27,49 +27,49 @@
 
 (1)二维平面上两点a(x1,y1)与b(x2,y2)间的欧氏距离：
 
-图1
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/1.png">
 
 (2)三维空间两点a(x1,y1,z1)与b(x2,y2,z2)间的欧氏距离：
 
-图2
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/2.png">
 
 (3)两个n维向量a(x11,x12,…,x1n)与 b(x21,x22,…,x2n)间的欧氏距离：
 
-图3
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/3.png">
 
 也可以用表示成向量运算的形式：
 
-图4
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/4.png">
 
 1.2曼哈顿距离(ManhattanDistance)
 想象你在曼哈顿要从一个十字路口开车到另外一个十字路口，驾驶距离是两点间的直线距离吗？显然不是，除非你能穿越大楼。实际驾驶距离是你走过马路距离，而曼哈顿的马路均为直线(十字路口)，就是这个“曼哈顿距离”。而这也是曼哈顿距离名称的来源， 曼哈顿距离也称为城市街区距离(CityBlock distance)。
 
 举个栗子：点和橙点曼哈顿距离 = 穿过的横竖直线和
 
-图5
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/5.png">
 
 (1)二维平面两点a(x1,y1)与b(x2,y2)间的曼哈顿距离
 
-图6
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/6.png">
 
 (2)两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的曼哈顿距离
 
-图7
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/7.png">
 
 1.3切比雪夫距离 ( Chebyshev Distance )
 假设平面空间有2点，分别为(x1,y1)，(x2,y2)。两点的横纵坐标差的最大值max(| x2-x1 | , | y2-y1 | ) ，即切比雪夫距离。
 
 (1)二维平面两点a(x1,y1)与b(x2,y2)间的切比雪夫距离
 
-图8
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/8.png">
 
 (2)两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的切比雪夫距离
 
-图9
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/9.png">
 
 另一种等价形式是
 
-图10
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/10.png">
 
 1.4闵可夫斯基距离(MinkowskiDistance)
 
@@ -79,7 +79,7 @@
 
 两个n维变量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的闵可夫斯基距离定义为：
 
-图11
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/11.png">
 
 其中p是一个变参数。
 
@@ -103,17 +103,20 @@
 (2)没有考虑各个分量的分布（期望，方差等)可能是不同的。
 
 1.5标准化欧氏距离(Standardized Euclidean distance )
+
 (1)标准欧氏距离的定义
 
 标准化欧氏距离是针对简单欧氏距离的缺点而作的一种改进方案。标准欧氏距离的思路：既然数据各维分量的分布不一样，好吧！那我先将各个分量都“标准化”到均值、方差相等吧。均值和方差标准化到多少呢？这里先复习点统计学知识吧，假设样本集X的均值(mean)为m，标准差(standarddeviation)为s，那么X的“标准化变量”表示为
 
 标准化变量的数学期望为0，方差为1。因此样本集的标准化过程(standardization)用公式描述就是：
 
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/12.png">
+
 标准化后的值 =  ( 标准化前的值  － 分量的均值 ) /分量的标准差
 
 经过简单的推导就可以得到两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的标准化欧氏距离的公式：
 
-图13
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/13.png">
 
 如果将方差的倒数看成是一个权重，这个公式可以看成是一种加权欧氏距离(WeightedEuclidean distance)。
 
