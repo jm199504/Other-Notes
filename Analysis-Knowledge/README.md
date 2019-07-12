@@ -123,19 +123,19 @@
 
 如果将方差的倒数看成是一个权重，这个公式可以看成是一种加权欧氏距离(WeightedEuclidean distance)。
 
-1.6马哈拉诺比斯距离(MahalanobisDistance,简称马氏距离)
+**1.6马哈拉诺比斯距离(MahalanobisDistance,简称马氏距离)**
 
 （1）马氏距离定义：有M个样本向量X1~Xm，协方差矩阵记为S，均值记为向量μ，则其中样本向量X到u的马氏距离表示为：
 
-图14
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/14.png">
 
 而其中向量Xi与Xj之间的马氏距离定义为：
 
-图15
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/15.png">
 
 若协方差矩阵是单位矩阵（各个样本向量之间独立同分布）,则公式就成了：
 
-图16
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/16.png">
 
 即欧氏距离
 
@@ -149,16 +149,16 @@
 
 (1)在二维空间中向量A(x1,y1)与向量B(x2,y2)的夹角余弦公式：
 
-图17
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/17.png">
 
 (2)两个n维样本点a(x11,x12,…,x1n)和b(x21,x22,…,x2n)的夹角余弦
 类似的，对于两个n维样本点a(x11,x12,…,x1n)和b(x21,x22,…,x2n)，可以使用类似于夹角余弦的概念来衡量它们间的相似程度。
 
-图18
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/18.png">
 
 即：
 
-图19
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/19.png">
 
 夹角余弦取值范围为[-1,1]。夹角余弦越大表示两个向量的夹角越小，夹角余弦越小表示两向量的夹角越大。当两个向量的方向重合时夹角余弦取最大值1，当两个向量的方向完全相反夹角余弦取最小值-1。
 
@@ -174,7 +174,7 @@
 
 两个集合A和B的交集元素在A，B的并集中所占的比例，称为两个集合的杰卡德相似系数，用符号J(A,B)表示。
 
-图20
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/20.png">
 
 杰卡德相似系数是衡量两个集合的相似度一种指标。
 
@@ -184,7 +184,7 @@
 
 杰卡德距离可用如下公式表示：
 
-图21
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/21.png">
 
 杰卡德距离用两个集合中不同元素占所有元素的比例来衡量两个集合的区分度。
 
@@ -208,17 +208,17 @@ s：样本A与B都是0的维度的个数
 
 而样本A与B的杰卡德距离表示为：
 
-图22
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/22.png">
 
 1.10相关系数( Correlation coefficient )与相关距离(Correlation distance)
 
 (1)相关系数的定义
 
-图23
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/23.png">
 
 相关系数是衡量随机变量X与Y相关程度的一种方法，相关系数的取值范围是[-1,1]。相关系数的绝对值越大，则表明X与Y相关度越高。当X与Y线性相关时，相关系数取值为1（正线性相关）或-1（负线性相关）。
 
 (2)相关距离的定义
 
-图24
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/24.png">
 
