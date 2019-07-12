@@ -46,7 +46,7 @@
 
 举个栗子：点和橙点曼哈顿距离 = 穿过的横竖直线和
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/5.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/5.png" width="300">
 
 (1)二维平面两点a(x1,y1)与b(x2,y2)间的曼哈顿距离
 
