@@ -143,7 +143,7 @@
 
 (2)马氏距离的优缺点：量纲无关，排除变量之间的相关性的干扰。
 
-1.7夹角余弦(Cosine)
+**1.7夹角余弦(Cosine)**
 
 几何中夹角余弦可用来衡量两个向量方向的差异，机器学习中借用这一概念来衡量样本向量之间的差异。
 
@@ -162,13 +162,13 @@
 
 夹角余弦取值范围为[-1,1]。夹角余弦越大表示两个向量的夹角越小，夹角余弦越小表示两向量的夹角越大。当两个向量的方向重合时夹角余弦取最大值1，当两个向量的方向完全相反夹角余弦取最小值-1。
 
-1.8汉明距离(Hammingdistance)
+**1.8汉明距离(Hammingdistance)**
 
 汉明距离的定义：两个等长字符串s1与s2之间的汉明距离定义为将其中一个变为另外一个所需要作的最小替换次数。例如字符串“1111”与“1001”之间的汉明距离为2。
 
 应用：信息编码（为了增强容错性，应使得编码间的最小汉明距离尽可能大）。
 
-1.9杰卡德相似系数(Jaccardsimilarity coefficient)
+**1.9杰卡德相似系数(Jaccardsimilarity coefficient)**
 
 (1) 杰卡德相似系数
 
@@ -210,7 +210,7 @@ s：样本A与B都是0的维度的个数
 
 <img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/22.png">
 
-1.10相关系数( Correlation coefficient )与相关距离(Correlation distance)
+**1.10相关系数( Correlation coefficient )与相关距离(Correlation distance)**
 
 (1)相关系数的定义
 
