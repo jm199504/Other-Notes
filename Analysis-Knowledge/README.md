@@ -22,7 +22,8 @@
 >
 > 相关系数& 相关距离
 
-1.1欧氏距离(EuclideanDistance)
+**1.1欧氏距离(EuclideanDistance)**
+
 欧氏距离是最易于理解的一种距离计算方法，源自欧氏空间中两点间的距离公式。
 
 (1)二维平面上两点a(x1,y1)与b(x2,y2)间的欧氏距离：
@@ -41,7 +42,8 @@
 
 <img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/4.png">
 
-1.2曼哈顿距离(ManhattanDistance)
+**1.2曼哈顿距离(ManhattanDistance)**
+
 想象你在曼哈顿要从一个十字路口开车到另外一个十字路口，驾驶距离是两点间的直线距离吗？显然不是，除非你能穿越大楼。实际驾驶距离是你走过马路距离，而曼哈顿的马路均为直线(十字路口)，就是这个“曼哈顿距离”。而这也是曼哈顿距离名称的来源， 曼哈顿距离也称为城市街区距离(CityBlock distance)。
 
 举个栗子：点和橙点曼哈顿距离 = 穿过的横竖直线和
@@ -56,7 +58,8 @@
 
 <img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/7.png">
 
-1.3切比雪夫距离 ( Chebyshev Distance )
+**1.3切比雪夫距离 ( Chebyshev Distance )**
+
 假设平面空间有2点，分别为(x1,y1)，(x2,y2)。两点的横纵坐标差的最大值max(| x2-x1 | , | y2-y1 | ) ，即切比雪夫距离。
 
 (1)二维平面两点a(x1,y1)与b(x2,y2)间的切比雪夫距离
@@ -71,7 +74,7 @@
 
 <img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/10.png">
 
-1.4闵可夫斯基距离(MinkowskiDistance)
+**1.4闵可夫斯基距离(MinkowskiDistance)**
 
 闵氏距离不是一种距离，而是一组距离的定义。
 
@@ -102,7 +105,7 @@
 
 (2)没有考虑各个分量的分布（期望，方差等)可能是不同的。
 
-1.5标准化欧氏距离(Standardized Euclidean distance )
+**1.5标准化欧氏距离(Standardized Euclidean distance )**
 
 (1)标准欧氏距离的定义
 
