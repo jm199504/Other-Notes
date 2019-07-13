@@ -177,15 +177,13 @@ data2 = json.loads(json_str)
 
 with open('Json_test_data.json', 'w') as f:
 
-    json.dump(data, f)
-
-
+  json.dump(data, f)
 
 //Reading data back
 
 with open('data.json', 'r') as f:
 
-    data3 = json.load(f)
+  data3 = json.load(f)
 
 print(data3)
 
