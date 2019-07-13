@@ -1,14 +1,12 @@
 ## 文件相关方法
 
-
-
 import os
 
 import shutil
 
 import json
 
-
+**1. os**
 
 // 获取当前工作目录，即当前Python脚本工作的目录路径:
 os.getcwd()
@@ -154,16 +152,6 @@ fp.truncate([size])
 
 os.mkdir("file")
 
-// 复制文件
-
-shutil.copyfile("oldfile", "newfile")// oldfile和newfile都只能是文件
-
-shutil.copy("oldfile", "newfile")// oldfile只能是文件夹，newfile可以是文件，也可以是目标目录
-
-// 复制文件夹
-
-shutil.copytree("olddir", "newdir")// olddir和newdir都只能是目录，且newdir必须不存在
-
 // 重命名文件（目录）
 
 os.rename("oldname", "newname")
@@ -180,15 +168,28 @@ os.remove("file")
 
 os.rmdir("dir")
 
+// 转换目录
+
+os.chdir("path")
+
+
+**2. shutil**
+
+// 复制文件
+
+shutil.copyfile("oldfile", "newfile")// oldfile和newfile都只能是文件
+
+shutil.copy("oldfile", "newfile")// oldfile只能是文件夹，newfile可以是文件，也可以是目标目录
+
+// 复制文件夹
+
+shutil.copytree("olddir", "newdir")// olddir和newdir都只能是目录，且newdir必须不存在
+
 // 只能删除空目录
 
 shutil.rmtree("dir")
 
-// 空目录、有内容的目录都可以删
-
-// 转换目录
-
-os.chdir("path")
+**3. json**
 
 // 创建一个json变量
 
@@ -225,3 +226,4 @@ n,m = map(int, input().split())
 // 以空格为间隔符输入1个list
 
 group = list(map(int, input().split()))
+
