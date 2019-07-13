@@ -1,6 +1,4 @@
-# 分析/统计/数挖笔记
-
-**1.距离度量 & 相似性度量(distance & similarity measurement)**
+## 1.距离度量 & 相似性度量(distance & similarity measurement)
 
 > 欧氏距离
 >
