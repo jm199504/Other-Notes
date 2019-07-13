@@ -26,19 +26,19 @@
 
 (1)二维平面上两点a(x1,y1)与b(x2,y2)间的欧氏距离：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/1.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/1.png">
 
 (2)三维空间两点a(x1,y1,z1)与b(x2,y2,z2)间的欧氏距离：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/2.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/2.png">
 
 (3)两个n维向量a(x11,x12,…,x1n)与 b(x21,x22,…,x2n)间的欧氏距离：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/3.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/3.png">
 
 也可以用表示成向量运算的形式：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/4.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/4.png">
 
 **1.2曼哈顿距离(ManhattanDistance)**
 
@@ -46,15 +46,15 @@
 
 举个栗子：点和橙点曼哈顿距离 = 穿过的横竖直线和
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/5.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/5.png" width="300">
 
 (1)二维平面两点a(x1,y1)与b(x2,y2)间的曼哈顿距离
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/6.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/6.png">
 
 (2)两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的曼哈顿距离
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/7.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/7.png">
 
 **1.3切比雪夫距离 ( Chebyshev Distance )**
 
@@ -62,15 +62,15 @@
 
 (1)二维平面两点a(x1,y1)与b(x2,y2)间的切比雪夫距离
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/8.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/8.png">
 
 (2)两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的切比雪夫距离
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/9.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/9.png">
 
 另一种等价形式是
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/10.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/10.png">
 
 **1.4闵可夫斯基距离(MinkowskiDistance)**
 
@@ -80,7 +80,7 @@
 
 两个n维变量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的闵可夫斯基距离定义为：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/11.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/11.png">
 
 其中p是一个变参数。
 
@@ -111,13 +111,13 @@
 
 标准化变量的数学期望为0，方差为1。因此样本集的标准化过程(standardization)用公式描述就是：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/12.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/12.png">
 
 标准化后的值 =  ( 标准化前的值  － 分量的均值 ) /分量的标准差
 
 经过简单的推导就可以得到两个n维向量a(x11,x12,…,x1n)与b(x21,x22,…,x2n)间的标准化欧氏距离的公式：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/13.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/13.png">
 
 如果将方差的倒数看成是一个权重，这个公式可以看成是一种加权欧氏距离(WeightedEuclidean distance)。
 
@@ -125,15 +125,15 @@
 
 （1）马氏距离定义：有M个样本向量X1~Xm，协方差矩阵记为S，均值记为向量μ，则其中样本向量X到u的马氏距离表示为：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/14.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/14.png">
 
 而其中向量Xi与Xj之间的马氏距离定义为：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/15.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/15.png">
 
 若协方差矩阵是单位矩阵（各个样本向量之间独立同分布）,则公式就成了：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/16.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/16.png">
 
 即欧氏距离
 
@@ -147,16 +147,16 @@
 
 (1)在二维空间中向量A(x1,y1)与向量B(x2,y2)的夹角余弦公式：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/17.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/17.png">
 
 (2)两个n维样本点a(x11,x12,…,x1n)和b(x21,x22,…,x2n)的夹角余弦
 类似的，对于两个n维样本点a(x11,x12,…,x1n)和b(x21,x22,…,x2n)，可以使用类似于夹角余弦的概念来衡量它们间的相似程度。
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/18.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/18.png">
 
 即：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/19.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/19.png">
 
 夹角余弦取值范围为[-1,1]。夹角余弦越大表示两个向量的夹角越小，夹角余弦越小表示两向量的夹角越大。当两个向量的方向重合时夹角余弦取最大值1，当两个向量的方向完全相反夹角余弦取最小值-1。
 
@@ -172,7 +172,7 @@
 
 两个集合A和B的交集元素在A，B的并集中所占的比例，称为两个集合的杰卡德相似系数，用符号J(A,B)表示。
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/20.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/20.png">
 
 杰卡德相似系数是衡量两个集合的相似度一种指标。
 
@@ -182,7 +182,7 @@
 
 杰卡德距离可用如下公式表示：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/21.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/21.png">
 
 杰卡德距离用两个集合中不同元素占所有元素的比例来衡量两个集合的区分度。
 
@@ -206,17 +206,17 @@ s：样本A与B都是0的维度的个数
 
 而样本A与B的杰卡德距离表示为：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/22.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/22.png">
 
 1.10相关系数( Correlation coefficient )与相关距离(Correlation distance)
 
 (1)相关系数的定义
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/23.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/23.png">
 
 相关系数是衡量随机变量X与Y相关程度的一种方法，相关系数的取值范围是[-1,1]。相关系数的绝对值越大，则表明X与Y相关度越高。当X与Y线性相关时，相关系数取值为1（正线性相关）或-1（负线性相关）。
 
 (2)相关距离的定义
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Analysis-Knowledge/images/24.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Distance/images/24.png">
 
