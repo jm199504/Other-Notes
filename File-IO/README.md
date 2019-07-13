@@ -188,3 +188,11 @@ with open('data.json', 'r') as f:
 ​	data3 = json.load(f)
 
 print(data3)
+
+// 以空格为间隔符输入2个int
+
+n,m = map(int, input().split())
+
+// 以空格为间隔符输入1个list
+
+group = list(map(int, input().split()))
