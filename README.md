@@ -31,3 +31,19 @@
 >2.3 json
 
 **3.Financial-Knowledge：金融领域知识**
+**4.Activation-Function：激活函数**
+>4.1 Sigmoid
+>
+>4.2 Tanh
+>
+>4.3 Relu
+>
+>4.4 LeakyReLu
+>
+>4.5 LReLU 与 PReLU
+>
+>4.6 ELU
+>
+
+
+
