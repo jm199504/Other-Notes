@@ -13,7 +13,7 @@
 
 是使用范围最广的一类激活函数，具有指数函数形状 。正式定义为: 
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/1.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/1.png" width="200">
 
 求导：
 
@@ -45,7 +45,7 @@ Sigmoid 函数能将负无穷到正无穷的数映射到0和1之间，并且对�
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/4.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/4.png" width="200">
 
 求导：
 
@@ -73,7 +73,7 @@ Tanh 网络的收敛速度要比 Sigmoid 快，因为 Tanh 的输出均值比 Si
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/7.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/7.png" width="200">
 
 函数图像：
 
@@ -97,7 +97,7 @@ Tanh 网络的收敛速度要比 Sigmoid 快，因为 Tanh 的输出均值比 Si
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/9.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/9.png" width="200">
 
 函数图像：
 
@@ -107,7 +107,7 @@ Tanh 网络的收敛速度要比 Sigmoid 快，因为 Tanh 的输出均值比 Si
 
 PReLU 是 ReLU 和 LReLU 的改进版本，具有非饱和性，定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/11.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/11.png" width="200">
 
 函数图像：
 
@@ -127,5 +127,5 @@ ELU融合了sigmoid和ReLU，具有左侧软饱性。其正式定义为：
 
 参考汇总表格：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/15.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/15.png">
 
