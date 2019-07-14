@@ -31,6 +31,10 @@
 >2.3 json
 
 **3.Financial-Knowledge：金融领域知识**
+>3.1 常用术语（市盈率...）
+>
+>3.2 常用技术指标（KDJ、MACD、WR...）
+>
 
 **4.Activation-Function：激活函数**
 >4.1 Sigmoid
