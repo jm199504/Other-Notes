@@ -13,11 +13,11 @@
 
 是使用范围最广的一类激活函数，具有指数函数形状 。正式定义为: 
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/1.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/1.png" width="300">
 
 求导：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/2.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/2.png" width="300">
 
 当z = 10或z = -10，g’(z) ≈0
 
@@ -27,7 +27,7 @@
 
 函数图像：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/3.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/3.png" width="300">
 
 可见，sigmoid在定义域内处处可导，同时也被定义为软饱和激活函数。
 
@@ -45,11 +45,11 @@ Sigmoid 函数能将负无穷到正无穷的数映射到0和1之间，并且对�
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/4.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/4.png" width="300">
 
 求导：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/5.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/5.png" width="300">
 
 当z = 10或z = -10，g’(z) ≈0
 
@@ -59,7 +59,7 @@ Sigmoid 函数能将负无穷到正无穷的数映射到0和1之间，并且对�
 
 函数位于[-1, 1]区间上，对应的图像是：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/6.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/6.png" width="300">
 
 同样地，Tanh 激活函数也具有软饱和性。
 
@@ -73,11 +73,11 @@ Tanh 网络的收敛速度要比 Sigmoid 快，因为 Tanh 的输出均值比 Si
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/7.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/7.png" width="300">
 
 函数图像：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/8.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/8.png" width="300">
 
 可见，ReLU 在x<0 时硬饱和。由于 x>0时导数为 1，所以，ReLU 能够在x>0时保持梯度不衰减，从而缓解梯度消失问题。但随着训练的推进，部分输入会落入硬饱和区导致对应权重无法更新，被称为“神经元死亡”。
 
@@ -97,35 +97,35 @@ Tanh 网络的收敛速度要比 Sigmoid 快，因为 Tanh 的输出均值比 Si
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/9.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/9.png" width="300">
 
 函数图像：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/10.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/10.png" width="300">
 
 **5.PReLU**
 
 PReLU 是 ReLU 和 LReLU 的改进版本，具有非饱和性，定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/11.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/11.png" width="300">
 
 函数图像：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/12.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/12.png" width="300">
 
 **6.ELU**
 
 ELU融合了sigmoid和ReLU，具有左侧软饱性。其正式定义为：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/13.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/13.png" width="300">
 
 函数图像：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/14.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/14.png" width="300">
 
 右侧线性部分使得ELU能够缓解梯度消失，而左侧软饱能够让ELU对输入变化或噪声更鲁棒。ELU的输出均值接近于零，所以收敛速度更快。
 
 参考汇总表格：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/15.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/15.png" width="300">
 
