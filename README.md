@@ -31,6 +31,7 @@
 >2.3 json
 
 **3.Financial-Knowledge：金融领域知识**
+
 **4.Activation-Function：激活函数**
 >4.1 Sigmoid
 >
@@ -44,6 +45,16 @@
 >
 >4.6 ELU
 >
+
+**5.参数优化**
+>5.1 RandomizedSearchCV | 随机搜索
+>
+>5.2 GridSearchCV | 网格搜索
+>
+>5.3 BayesianOptimization | 贝叶斯超参优化
+>
+
+
 
 
 
