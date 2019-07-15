@@ -7,7 +7,7 @@ normalization）
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/1.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/1.png" width="300">
 
 其中：min(x)：样本最小值，max(x)样本最大值，但是最大最小值容易受到异常点的影响，健壮性比较差，使用于传统的精确小数据。
 
@@ -15,11 +15,11 @@ normalization）
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/2.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/2.png" width="300">
 
 ### 3.z-score
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/3.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/3.png" width="300">
 
