@@ -21,5 +21,5 @@ normalization）
 
 定义：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/3.png" width="100">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Normalization/images/3.png" width="200">
 
