@@ -70,3 +70,52 @@ plt.show()
 
 图1
 
+### 6.其他示范图
+
+#### 6.1 P-R曲线
+
+精确率precision vs 召回率recall 曲线，以recall作为横坐标轴，precision作为纵坐标轴。
+
+```javascript
+import matplotlib.pyplot as plt
+from sklearn.naive_bayes import GaussianNB
+from sklearn.datasets import load_digits as load_data
+import scikitplot as skplt
+# Load dataset
+X, y = load_data(return_X_y=True)
+# Create classifier instance then fit
+nb = GaussianNB()
+nb.fit(X,y)
+# Get predicted probabilities
+y_probas = nb.predict_proba(X)
+skplt.metrics.plot_precision_recall_curve(y, y_probas, cmap='nipy_spectral')
+plt.show()
+```
+
+输出图：
+
+图2
+
+#### 6.2 混淆矩阵
+
+是分类的重要评价标准，下面代码是用随机森林对鸢尾花数据集进行分类，分类结果画一个归一化的混淆矩阵。
+
+```javascript
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import load_digits as load_data
+from sklearn.model_selection import cross_val_predict
+import matplotlib.pyplot as plt
+import scikitplot as skplt
+X, y = load_data(return_X_y=True)
+# Create an instance of the RandomForestClassifier
+classifier = RandomForestClassifier()
+# Perform predictions
+predictions = cross_val_predict(classifier, X, y)
+plot = skplt.metrics.plot_confusion_matrix(y, predictions, normalize=True)
+plt.show()
+```
+
+输出图：
+
+图3
+
