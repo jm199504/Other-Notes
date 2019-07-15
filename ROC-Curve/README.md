@@ -68,7 +68,7 @@ plt.show()
 
 ### 5.输出效果图
 
-图1
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/1.png">
 
 ### 6.其他示范图
 
@@ -94,7 +94,7 @@ plt.show()
 
 输出图：
 
-图2
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/2.png">
 
 #### 6.2 混淆矩阵
 
@@ -117,5 +117,21 @@ plt.show()
 
 输出图：
 
-图3
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/3.png">
 
+### 7.补充
+AUC值是ROC曲线（接收者操作特征曲线（receiver operating characteristic curve）下的面积，用来评判模型结果结果的可信度，可以理解为，在样本里抽一个正样本和一个负样本，正样本的评分高于负样本的概率比较大。
+
+ROC曲线的横坐标是伪阳性率（也叫假正类率，False Positive Rate），纵坐标是真阳性率（真正类率，True Positive Rate）。
+
+（1）伪阳性率（FPR），也称假阳性率(False Positice Rate，FPR)，误诊率( = 1 - 特异度)：
+
+判定为正例却不是真正例的概率（负例被预测为正例）
+
+<img src="https://github.com/jm199504/Interview-bible/blob/master/images/15.png">
+
+（2）真阳性率（TPR），也称真阳性率(True Positive Rate，TPR)，灵敏度(Sensitivity)，召回率(Recall)：
+
+判定为正例也是真正例的概率（正例被预测为正例）
+
+<img src="https://github.com/jm199504/Interview-bible/blob/master/images/12.png">
