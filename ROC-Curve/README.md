@@ -68,7 +68,7 @@ plt.show()
 
 ### 5.输出效果图
 
-图1
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/1.png">
 
 ### 6.其他示范图
 
@@ -94,7 +94,7 @@ plt.show()
 
 输出图：
 
-图2
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/2.png">
 
 #### 6.2 混淆矩阵
 
@@ -117,5 +117,5 @@ plt.show()
 
 输出图：
 
-图3
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/3.png">
 
