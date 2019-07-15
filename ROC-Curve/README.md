@@ -124,14 +124,14 @@ AUC值是ROC曲线（接收者操作特征曲线（receiver operating characteri
 
 ROC曲线的横坐标是伪阳性率（也叫假正类率，False Positive Rate），纵坐标是真阳性率（真正类率，True Positive Rate）。
 
-（1）伪阳性率（FPR）：判定为正例却不是真正例的概率（负例被预测为正例）
+（1）伪阳性率（FPR），也称假阳性率(False Positice Rate，FPR)，误诊率( = 1 - 特异度)：
 
-假阳性率(False Positice Rate，FPR)，误诊率( = 1 - 特异度)：
+判定为正例却不是真正例的概率（负例被预测为正例）
 
 <img src="https://github.com/jm199504/Interview-bible/blob/master/images/15.png">
 
-（2）真阳性率（TPR）：判定为正例也是真正例的概率（正例被预测为正例）
+（2）真阳性率（TPR），也称真阳性率(True Positive Rate，TPR)，灵敏度(Sensitivity)，召回率(Recall)：
 
-真阳性率(True Positive Rate，TPR)，灵敏度(Sensitivity)，召回率(Recall)：
+判定为正例也是真正例的概率（正例被预测为正例）
 
 <img src="https://github.com/jm199504/Interview-bible/blob/master/images/12.png">
