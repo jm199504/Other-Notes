@@ -8,7 +8,9 @@ import json
 
 import sys
 
-**1. os**
+
+
+### 1.os
 
 // 获取当前工作目录，即当前Python脚本工作的目录路径:
 os.getcwd()
@@ -186,8 +188,7 @@ os.rmdir("dir")
 
 os.chdir("path")
 
-
-**2. shutil**
+###  2.shutil
 
 // 复制文件
 
@@ -203,7 +204,7 @@ shutil.copytree("olddir", "newdir")// olddir和newdir都只能是目录，且new
 
 shutil.rmtree("dir")
 
-**3. json**
+### 3. json
 
 // 创建一个json变量
 
@@ -241,7 +242,7 @@ n,m = map(int, input().split())
 
 group = list(map(int, input().split()))
 
-**4.sys**
+### 4.sys
 
 sys.argv//命令行参数List，第一个元素是程序本身路径
 
