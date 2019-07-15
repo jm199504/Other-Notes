@@ -58,7 +58,7 @@
 >
 >5.3 BayesianOptimization | 贝叶斯超参优化
 >
->5.4 Pipe | 个人常用方法
+>5.4 Pipeline | 个人常用方法
 
 **6.特征选择**
 >6.1 过滤低方差特征
