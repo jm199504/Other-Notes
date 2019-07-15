@@ -126,4 +126,5 @@ ELU融合了sigmoid和ReLU，具有左侧软饱性。其正式定义为：
 右侧线性部分使得ELU能够缓解梯度消失，而左侧软饱能够让ELU对输入变化或噪声更鲁棒。ELU的输出均值接近于零，所以收敛速度更快。
 
 汇总：
+
 <img src="https://github.com/jm199504/Other-Notes/blob/master/Activation-Function/images/16.png">
