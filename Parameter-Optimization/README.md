@@ -9,4 +9,5 @@
 **3.BayesianOptimization | 贝叶斯超参优化**
 
 贝叶斯超参优化输出效果图：
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Parameter-Optimization/images/1.png">
+
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Parameter-Optimization/images/1.png" width="500">
