@@ -32,12 +32,7 @@
 >
 >2.4 sys
 
-**3.Financial-Knowledge：金融领域知识**
->3.1 常用术语
->
->3.2 常用技术指标
->
->3.3 ...
+**3.绘制ROC曲线**
 
 **4.Activation-Function：激活函数**
 >4.1 Sigmoid
