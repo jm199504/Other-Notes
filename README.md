@@ -33,7 +33,8 @@
 >2.4 sys
 
 **3.绘制ROC曲线**
-
+> 基于scikitplot库
+>
 **4.Activation-Function：激活函数**
 >4.1 Sigmoid
 >
