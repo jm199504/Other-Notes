@@ -89,9 +89,32 @@
 >
 
 **9.评估函数**
->9.1 分类问题
-  Accuracy
-  >
->9.2 回归问题
-  >
+>**9.1 分类问题**
 >
+> Accuracy
+>
+> Precision
+>
+> Recall
+>
+> F-score 
+>
+> ROC/AUC
+>
+> Log Loss
+>
+> Contrast Loss
+>
+>**9.2 回归问题**
+> 
+> MAE(Mean absolute error)
+>
+> MSE(Mean Squared Error)
+>
+> RMSE（Root means squared error）
+>
+> MAPE(Mean absolute % error)
+>
+> R^2(Coefficient of determination)
+>
+
