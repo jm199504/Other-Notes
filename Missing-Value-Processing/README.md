@@ -40,7 +40,7 @@ imputed_data = pd.DataFrame(imr.transform(data.values))
 
 参数可选：
 
-图1
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Missing-Value-Processing/images/1.png">
 
 ### 3.前后插值法
 
