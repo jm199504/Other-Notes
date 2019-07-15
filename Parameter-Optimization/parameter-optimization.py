@@ -99,3 +99,22 @@ if __name__ == "__main__":
     iris = datasets.load_iris()
     X,y = iris.data,iris.target
     optimize_rfc(X, y)
+	
+	
+
+# 基于管道实现参数优化
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import GridSearchCV
+X = [[0, 0, 1], [0, 1, 0], [1, 0, 0], [0, 1, 1], [0, 1, 0], [0, 1, 1]]
+y = [0,0,0,1,1,1]
+pipe = Pipeline(steps=[('scale', StandardScaler()), 
+                       ('logistic', LogisticRegression())])
+param_grid = {'logistic__C': [0.0001, 0.001, 0.01], 
+              'logistic__penalty': ['l1', 'l2']}
+gs = GridSearchCV(estimator=pipe, 
+                  param_grid=param_grid, 
+                  cv=3)
+gs.fit(X, y)
+print(gs.best_params_)
