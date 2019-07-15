@@ -29,6 +29,8 @@
 >2.2 shutil
 >
 >2.3 json
+>
+>2.4 sys
 
 **3.Financial-Knowledge：金融领域知识**
 >3.1 常用术语
