@@ -94,7 +94,7 @@ mape = 100 * np.sum(abs((y_pred-y_test)/y_test))/len(y_test)
 smape = 100 * np.sum(abs(y_pred-y_test)/(abs(y_test)+abs(y_pred)/2))/len(y_test)
 ```
 
-#### R Squared(Coefficient of determination)
+#### R Squared
 
 R Squared = 1 - MSE(y^,y) / Var(y)
 

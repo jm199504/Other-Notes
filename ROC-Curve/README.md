@@ -135,3 +135,7 @@ ROC曲线的横坐标是伪阳性率（也叫假正类率，False Positive Rate�
 判定为正例也是真正例的概率（正例被预测为正例）
 
 <img src="https://github.com/jm199504/Interview-bible/blob/master/images/12.png">
+
+基于预测结果对ROC可视化效果图：
+
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/4.png">
