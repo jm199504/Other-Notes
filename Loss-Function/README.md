@@ -57,7 +57,7 @@ print ("mae error is: " + str(mae_val))
 
 ### 4.Hinge Loss/多分类 SVM 损失
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/4.png" width="200">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/4.png" width="400">
 
 hinge loss 常用于最大间隔分类（maximum-margin classification）（最常用：支持向量机）。
 
@@ -65,7 +65,7 @@ hinge loss 常用于最大间隔分类（maximum-margin classification）（最�
 
 计算过程举例：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/5.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/5.png" width="500">
 
 其中预测3幅图的真实标签分别为：dog、cat、horse，其以下表格表示模型预测各类别的值，计算过程如下：
 
@@ -92,7 +92,7 @@ hinge loss 常用于最大间隔分类（maximum-margin classification）（最�
 
 ### 5.交叉熵损失/负对数似然
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/6.png" width="200">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/6.png" width="400">
 
 分类问题中最常见的设置。随着预测概率偏离实际标签，交叉熵损失会逐渐增加。
 
