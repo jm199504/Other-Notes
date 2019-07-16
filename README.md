@@ -119,3 +119,4 @@
 >
 > 9.2.6 R Squared
 >
+f(x)=\frac{1}{\sqrt{2 \pi \sigma x}} e^{-\frac{(x-\mu)^{2}}{2 \sigma^{2}}}
