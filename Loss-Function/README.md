@@ -80,15 +80,15 @@ hinge loss 常用于最大间隔分类（maximum-margin classification）（最�
 >
 > max(0, (-4.61) - (3.28)+ 1) + max(0, (1.46) - (3.28)+ 1)
 > max(0, -6.89) + max(0, -0.82)
-> 0 + 0
-> 0 #(Zero loss as correct prediction)
+> = 0 + 0
+> = 0 #(Zero loss as correct prediction)
 >
 > #### 3rd training example
 >
 > max(0, (1.03) - (-2.27)+ 1) + max(0, (-2.37) - (-2.27)+ 1)
 > max(0, 4.3) + max(0, 0.9)
-> 4.3 + 0.9
-> 5.2 #(High loss as very wrong prediction)
+> = 4.3 + 0.9
+> = 5.2 #(High loss as very wrong prediction)
 
 ### 5.交叉熵损失/负对数似然
 
