@@ -2,7 +2,7 @@
 
 ### 1.均方误差/平方损失/L2损失（MSE）
 
-图1
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/1.png" width="200">
 
 MSE度量预测值和时间观测值的平方差的均值，只考虑了误差的平均大小，而没有考虑方向。
 
@@ -26,7 +26,7 @@ print("rms error is: " + str(rmse_val))
 
 ### 2.平均绝对误差/L1 损失
 
-图2
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/2.png" width="200">
 
 平均绝对误差（MAE）度量的是预测值和实际观测值之间绝对差之和的平均值。和 MSE 一样，这种度量方法也是在不考虑方向的情况下衡量误差大小。但和 MSE 的不同之处在于，MAE 需要像线性规划这样更复杂的工具来计算梯度。此外，MAE 对异常值更加稳健，因为它不使用平方。
 
@@ -51,13 +51,13 @@ print ("mae error is: " + str(mae_val))
 
 ### 3.平均偏差误差（mean bias error）
 
-图3
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/3.png" width="200">
 
 与 MAE 相似，唯一的区别是这个函数没有用绝对值。用这个函数需要注意的一点是，正负误差可以互相抵消。尽管在实际应用中没那么准确，但它可以确定模型存在正偏差还是负偏差。
 
 ### 4.Hinge Loss/多分类 SVM 损失
 
-图4
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/4.png" width="300">
 
 hinge loss 常用于最大间隔分类（maximum-margin classification）（最常用：支持向量机）。
 
@@ -65,7 +65,7 @@ hinge loss 常用于最大间隔分类（maximum-margin classification）（最�
 
 计算过程举例：
 
-图5
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/5.png" width="500">
 
 其中预测3幅图的真实标签分别为：dog、cat、horse，其以下表格表示模型预测各类别的值，计算过程如下：
 
@@ -73,26 +73,26 @@ hinge loss 常用于最大间隔分类（maximum-margin classification）（最�
 >
 > max(0, (1.49) - (-0.39) + 1) + max(0, (4.21) - (-0.39) + 1)
 > max(0, 2.88) + max(0, 5.6)
-> 2.88 + 5.6
-> 8.48 #(High loss as very wrong prediction)
+> = 2.88 + 5.6
+> = 8.48 #(High loss as very wrong prediction)
 >
 > #### 2nd training example
 >
 > max(0, (-4.61) - (3.28)+ 1) + max(0, (1.46) - (3.28)+ 1)
 > max(0, -6.89) + max(0, -0.82)
-> 0 + 0
-> 0 #(Zero loss as correct prediction)
+> = 0 + 0
+> = 0 #(Zero loss as correct prediction)
 >
 > #### 3rd training example
 >
 > max(0, (1.03) - (-2.27)+ 1) + max(0, (-2.37) - (-2.27)+ 1)
 > max(0, 4.3) + max(0, 0.9)
-> 4.3 + 0.9
-> 5.2 #(High loss as very wrong prediction)
+> = 4.3 + 0.9
+> = 5.2 #(High loss as very wrong prediction)
 
 ### 5.交叉熵损失/负对数似然
 
-图6
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/6.png" width="400">
 
 分类问题中最常见的设置。随着预测概率偏离实际标签，交叉熵损失会逐渐增加。
 
