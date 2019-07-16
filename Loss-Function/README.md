@@ -73,8 +73,8 @@ hinge loss 常用于最大间隔分类（maximum-margin classification）（最�
 >
 > max(0, (1.49) - (-0.39) + 1) + max(0, (4.21) - (-0.39) + 1)
 > max(0, 2.88) + max(0, 5.6)
-> 2.88 + 5.6
-> 8.48 #(High loss as very wrong prediction)
+> = 2.88 + 5.6
+> = 8.48 #(High loss as very wrong prediction)
 >
 > #### 2nd training example
 >
