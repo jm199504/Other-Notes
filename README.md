@@ -103,18 +103,19 @@
 >
 > 9.1.6 Log Loss
 >
-> 9.1.7 Contrast Loss
+> 9.1.7 Contrastive Loss
 >
 >**9.2 回归问题**
 > 
-> 9.2.1 MAE(Mean absolute error)
+> 9.2.1 MAE (Mean absolute error)
 >
-> 9.2.2 MSE(Mean Squared Error)
+> 9.2.2 MSE (Mean Squared Error)
 >
 > 9.2.3 RMSE（Root means squared error）
 >
-> 9.2.4 MAPE(Mean absolute % error)
+> 9.2.4 MAPE (Mean absolute % error)
 >
-> 9.2.5 R^2(Coefficient of determination)
+> 9.2.5 SMAPE (Symmetric Mean Absolute Percentage Error)
 >
-
+> 9.2.6 R Squared
+>
