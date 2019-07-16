@@ -164,5 +164,13 @@ stack_gen = StackingCVRegressor(regressors=(xgboost, lightgbm, svr, ridge, gbr, 
                                 use_features_in_secondary=True)
 ```
 
-### 5
+### 5.忽略无用的警告
+
+```
+# Ignore useless warnings
+import warnings
+warnings.filterwarnings(action="ignore")
+```
+
+### 6.
 
