@@ -1,6 +1,6 @@
 ## 评估函数
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/1.png" width="200">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/1.png" width="500">
 
 ### 1.分类问题
 
@@ -22,17 +22,17 @@ Recall = TP / (TP + FN)
 
 #### 综合评价 (F-Score)
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/2.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/2.png" width="300">
 
 其中β=1时表示Precision和Recall权重同等重要，简称为F1-Score，β越大，Recall权重越大，反之Precision权重越大。
 
 其中F1也称为精确率和召回率的调和均值
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/3.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/3.png" width="300">
 
 即：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/4.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/4.png" width="300">
 
 #### ROC/AUC
 
@@ -105,7 +105,7 @@ rsquared = 1- mean_squared_error(y_test,y_preditc)/ np.var(y_test)
 ### 3.python代码实现
 
 ```
-#  classification problems
+# classification problems
 
 # Accuracy
 Accuracy = (TP + TN) / ( TP + TN + FP + FN )
