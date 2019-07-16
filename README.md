@@ -88,3 +88,33 @@
 >8.3 z-score标准化
 >
 
+**9.评估函数**
+>**9.1 分类问题**
+>
+> 9.1.1 Accuracy
+>
+> 9.1.2 Precision
+>
+> 9.1.3 Recall
+>
+> 9.1.4 F-score 
+>
+> 9.1.5 ROC/AUC
+>
+> 9.1.6 Log Loss
+>
+> 9.1.7 Contrast Loss
+>
+>**9.2 回归问题**
+> 
+> 9.2.1 MAE(Mean absolute error)
+>
+> 9.2.2 MSE(Mean Squared Error)
+>
+> 9.2.3 RMSE（Root means squared error）
+>
+> 9.2.4 MAPE(Mean absolute % error)
+>
+> 9.2.5 R^2(Coefficient of determination)
+>
+

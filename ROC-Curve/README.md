@@ -94,7 +94,7 @@ plt.show()
 
 输出图：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/2.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/2.png" width="500">
 
 #### 6.2 混淆矩阵
 
@@ -117,7 +117,7 @@ plt.show()
 
 输出图：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/3.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/3.png" width="500">
 
 ### 7.补充
 AUC值是ROC曲线（接收者操作特征曲线（receiver operating characteristic curve）下的面积，用来评判模型结果结果的可信度，可以理解为，在样本里抽一个正样本和一个负样本，正样本的评分高于负样本的概率比较大。
