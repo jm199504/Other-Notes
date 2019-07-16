@@ -138,4 +138,4 @@ ROC曲线的横坐标是伪阳性率（也叫假正类率，False Positive Rate�
 
 基于预测结果对ROC可视化效果图：
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/4.png" width="500">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/ROC-Curve/images/4.png">
