@@ -1,6 +1,6 @@
 ## 评估函数
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/1.png" width="500">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/1.png" width="700">
 
 ### 1.分类问题
 
