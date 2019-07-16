@@ -57,7 +57,7 @@ print ("mae error is: " + str(mae_val))
 
 ### 4.Hinge Loss/多分类 SVM 损失
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/4.png" width="400">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Loss-Function/images/4.png" width="300">
 
 hinge loss 常用于最大间隔分类（maximum-margin classification）（最常用：支持向量机）。
 
