@@ -1,6 +1,6 @@
 ## 评估函数
 
-图1
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/1.png" width="200">
 
 ### 1.分类问题
 
@@ -22,17 +22,17 @@ Recall = TP / (TP + FN)
 
 #### 综合评价 (F-Score)
 
-图2
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/2.png">
 
 其中β=1时表示Precision和Recall权重同等重要，简称为F1-Score，β越大，Recall权重越大，反之Precision权重越大。
 
 其中F1也称为精确率和召回率的调和均值
 
-图3
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/3.png">
 
 即：
 
-图4
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/4.png">
 
 #### ROC/AUC
 
