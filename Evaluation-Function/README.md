@@ -54,7 +54,7 @@ Recall = TP / (TP + FN)
 
 ### 2.回归问题
 
-#### MAE(Mean absolute error)
+#### 均方绝对误差MAE(Mean absolute error)
 
 <img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/7.png" width="300">
 
@@ -80,7 +80,7 @@ rmse = mse_test ** 0.5
 
 #### MAPE(Mean Absolute Percentage Error)
 
-图10
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/10.png" width="300">
 
 ```javascript
 mape = 100 * np.sum(abs((y_pred-y_test)/y_test))/len(y_test)
@@ -88,7 +88,7 @@ mape = 100 * np.sum(abs((y_pred-y_test)/y_test))/len(y_test)
 
 #### 对称平均绝对百分比误差SMAPE(Symmetric Mean Absolute Percentage Error)
 
-图11
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/11.png" width="300">
 
 ```javascript
 smape = 100 * np.sum(abs(y_pred-y_test)/(abs(y_test)+abs(y_pred)/2))/len(y_test)
