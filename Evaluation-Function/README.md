@@ -28,7 +28,7 @@ Recall = TP / (TP + FN)
 
 其中F1也称为精确率和召回率的调和均值
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/3.png" width="300">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/3.png" width="200">
 
 即：
 
@@ -40,7 +40,7 @@ Recall = TP / (TP + FN)
 
 #### 对数损失(Log Loss)
 
-图5
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/5.png" width="300">
 
 其中N：样本数；M：类别数；yij：第i个样本属于分类j时为为1，否则为0；pij：第i个样本被预测为第j类的概率
 
@@ -48,7 +48,7 @@ Recall = TP / (TP + FN)
 
 常用于孪生LSTM（siamese LSTM）中，定义：
 
-图6
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/6.png" width="300">
 
 其中d= ||a-b||2表示其a与b（两个样本特征）的欧氏距离，y表示两样本是否匹配的标签，y=1表示样本相似或者匹配，反之为不匹配，margin为设定阈值（通常设为1）。
 
@@ -56,7 +56,7 @@ Recall = TP / (TP + FN)
 
 #### MAE(Mean absolute error)
 
-图7
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/7.png" width="300">
 
 ```javascript
 mae=np.sum(np.absolute(y_pred-y_test))/len(y_test)
@@ -64,7 +64,7 @@ mae=np.sum(np.absolute(y_pred-y_test))/len(y_test)
 
 #### 均方误差MSE(Mean Squared Error)
 
-图8
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/8.png" width="300">
 
 ```javascript
 mse = np.sum((y_pred-y_test)**2)/len(y_test)
@@ -72,7 +72,7 @@ mse = np.sum((y_pred-y_test)**2)/len(y_test)
 
 #### 均方根误差RMSE(Root means squared error)
 
-图9
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Evaluation-Function/images/9.png" width="300">
 
 ```javascript
 rmse = mse_test ** 0.5
