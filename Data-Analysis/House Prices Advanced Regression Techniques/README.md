@@ -1,6 +1,8 @@
 ## 数据分析（学习）
 
-### 参考来源：https://www.kaggle.com/lavanyashukla01/how-i-made-top-0-3-on-a-kaggle-competition
+### 参考来源：
+
+https://www.kaggle.com/lavanyashukla01/how-i-made-top-0-3-on-a-kaggle-competition
 
 ### 1.绘图库
 
