@@ -1,8 +1,11 @@
-## 数据分析
+## 数据分析（学习）
+
+### 参考来源：https://www.kaggle.com/lavanyashukla01/how-i-made-top-0-3-on-a-kaggle-competition
 
 ### 1.绘图库
 
 import seaborn as sns
+
 import matplotlib.pyplot as plt
 
 ### 2.分析某列数据的分布及可视化
@@ -457,54 +460,4 @@ def blended_predictions(X):
             (0.1 * gbr_model_full_data.predict(X)) + \
             (0.1 * xgb_model_full_data.predict(X)) + \
             (0.1 * lgb_model_full_data.predict(X)) + \
-            (0.05 * rf_model_full_data.predict(X)) + \
-            (0.35 * stack_gen_model.predict(np.array(X))))
-```
-
-### 26.绘制各模型得分
-
-```javascript
-sns.set_style("white")
-fig = plt.figure(figsize=(24, 12))
-
-ax = sns.pointplot(x=list(scores.keys()), y=[score for score, _ in scores.values()], markers=['o'], linestyles=['-'])
-for i, score in enumerate(scores.values()):
-    ax.text(i, score[0] + 0.002, '{:.6f}'.format(score[0]), horizontalalignment='left', size='large', color='black', weight='semibold')
-
-plt.ylabel('Score (RMSE)', size=20, labelpad=12.5)
-plt.xlabel('Model', size=20, labelpad=12.5)
-plt.tick_params(axis='x', labelsize=13.5)
-plt.tick_params(axis='y', labelsize=12.5)
-
-plt.title('Scores of Models', size=20)
-
-plt.show
-```
-
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/8.png" width="500">
-
-### 27.读取提交示范代码格式
-
-```javascript
-submission = pd.read_csv("house-prices-advanced-regression-techniques/sample_submission.csv")
-submission.shape
-```
-
-### 28.调整预测结果
-
-```javascript
-# 调整混合模型的预测
-submission.iloc[:,1] = np.floor(np.expm1(blended_predictions(X_test)))
-
-# 修复异常点的预测值
-q1 = submission['SalePrice'].quantile(0.0045)
-q2 = submission['SalePrice'].quantile(0.99)
-submission['SalePrice'] = submission['SalePrice'].apply(lambda x: x if x > q1 else x*0.77)
-submission['SalePrice'] = submission['SalePrice'].apply(lambda x: x if x < q2 else x*1.1)
-submission.to_csv("submission_regression1.csv", index=False)
-
-# 比例缩放
-submission['SalePrice'] *= 1.001619
-submission.to_csv("submission_regression2.csv", index=False)
-```
-
+            (0.05 * 
