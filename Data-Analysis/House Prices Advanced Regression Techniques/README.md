@@ -1,8 +1,13 @@
-## 数据分析
+## 数据分析（学习）
+
+### 参考来源：
+
+https://www.kaggle.com/lavanyashukla01/how-i-made-top-0-3-on-a-kaggle-competition
 
 ### 1.绘图库
 
 import seaborn as sns
+
 import matplotlib.pyplot as plt
 
 ### 2.分析某列数据的分布及可视化
@@ -21,21 +26,31 @@ ax.set(title="SalePrice distribution")
 sns.despine(trim=True, left=True)
 plt.show()
 ```
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/1.png">
 
 ### 3.分析某列数据的偏度和峰度
 
 偏度（Skewness）是描述数据分布形态的统计量，其描述的是某总体取值分布的对称性，简单来说就是数据的不对称程度。。
 偏度是三阶中心距计算出来的。
+
 （1）Skewness = 0 ，分布形态与正态分布偏度相同。
+
 （2）Skewness > 0 ，正偏差数值较大，为正偏或右偏。长尾巴拖在右边，数据右端有较多的极端值。
+
 （3）Skewness < 0 ，负偏差数值较大，为负偏或左偏。长尾巴拖在左边，数据左端有较多的极端值。
+
 （4）数值的绝对值越大，表明数据分布越不对称，偏斜程度大。
+
 | Skewness| 越大，分布形态偏移程度越大。
 
 峰度（Kurtosis）偏度是描述某变量所有取值分布形态陡缓程度的统计量，简单来说就是数据分布顶的尖锐程度。
+
 峰度是四阶标准矩计算出来的。
+
 （1）Kurtosis=0 与正态分布的陡缓程度相同。
+
 （2）Kurtosis>0 比正态分布的高峰更加陡峭——尖顶峰
+
 （3）Kurtosis<0 比正态分布的高峰来得平台——平顶峰
 
 ```javascript
@@ -51,6 +66,8 @@ corr = train.corr()
 plt.subplots(figsize=(15,12))
 sns.heatmap(corr, vmax=0.9, cmap="Blues", square=True)
 ```
+
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/2.png" width="500">
 
 ### 5.提取数值型数据特征
 
@@ -88,7 +105,7 @@ for i, feature in enumerate(list(train[numeric]), 1):
 plt.show()
 ```
 
-图3
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/3.png">
 
 ### 7.分析各列数据与标签值的相关性（箱体图可视化）
 
@@ -100,7 +117,7 @@ fig = sns.boxplot(x=train['OverallQual'], y="SalePrice", data=data)
 fig.axis(ymin=0, ymax=800000);
 ```
 
-图4
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/4.png">
 
 ### 8.对非正态分布的标签值进行修正
 
@@ -168,7 +185,7 @@ ax.set(title="Percent missing data by feature")
 sns.despine(trim=True, left=True)
 ```
 
-图5
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/5.png">
 
 ### 13.填补缺失值
 
@@ -200,6 +217,8 @@ ax.set(xlabel="Numeric values")
 ax.set(title="Numeric Distribution of Features")
 sns.despine(trim=True, left=True)
 ```
+
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/6.png">
 
 ### 15.提取倾斜数据
 
@@ -236,7 +255,7 @@ ax.set(title="Numeric Distribution of Features")
 sns.despine(trim=True, left=True)
 ```
 
-图7
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/7.png">
 
 ### 17.产生新的数据特征
 
@@ -443,52 +462,4 @@ def blended_predictions(X):
             (0.1 * gbr_model_full_data.predict(X)) + \
             (0.1 * xgb_model_full_data.predict(X)) + \
             (0.1 * lgb_model_full_data.predict(X)) + \
-            (0.05 * rf_model_full_data.predict(X)) + \
-            (0.35 * stack_gen_model.predict(np.array(X))))
-```
-
-### 26.绘制各模型得分
-
-```javascript
-sns.set_style("white")
-fig = plt.figure(figsize=(24, 12))
-
-ax = sns.pointplot(x=list(scores.keys()), y=[score for score, _ in scores.values()], markers=['o'], linestyles=['-'])
-for i, score in enumerate(scores.values()):
-    ax.text(i, score[0] + 0.002, '{:.6f}'.format(score[0]), horizontalalignment='left', size='large', color='black', weight='semibold')
-
-plt.ylabel('Score (RMSE)', size=20, labelpad=12.5)
-plt.xlabel('Model', size=20, labelpad=12.5)
-plt.tick_params(axis='x', labelsize=13.5)
-plt.tick_params(axis='y', labelsize=12.5)
-
-plt.title('Scores of Models', size=20)
-
-plt.show
-```
-
-### 27.读取提交示范代码格式
-
-```javascript
-submission = pd.read_csv("house-prices-advanced-regression-techniques/sample_submission.csv")
-submission.shape
-```
-
-### 28.调整预测结果
-
-```javascript
-# 调整混合模型的预测
-submission.iloc[:,1] = np.floor(np.expm1(blended_predictions(X_test)))
-
-# 修复异常点的预测值
-q1 = submission['SalePrice'].quantile(0.0045)
-q2 = submission['SalePrice'].quantile(0.99)
-submission['SalePrice'] = submission['SalePrice'].apply(lambda x: x if x > q1 else x*0.77)
-submission['SalePrice'] = submission['SalePrice'].apply(lambda x: x if x < q2 else x*1.1)
-submission.to_csv("submission_regression1.csv", index=False)
-
-# 比例缩放
-submission['SalePrice'] *= 1.001619
-submission.to_csv("submission_regression2.csv", index=False)
-```
-
+            (0.05 * 
