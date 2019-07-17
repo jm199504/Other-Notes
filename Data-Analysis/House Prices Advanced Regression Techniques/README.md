@@ -53,7 +53,7 @@ plt.subplots(figsize=(15,12))
 sns.heatmap(corr, vmax=0.9, cmap="Blues", square=True)
 ```
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/2.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/2.png" width="500">
 
 ### 5.提取数值型数据特征
 
@@ -472,7 +472,7 @@ plt.title('Scores of Models', size=20)
 plt.show
 ```
 
-<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/8.png">
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/8.png" width="500">
 
 ### 27.读取提交示范代码格式
 
