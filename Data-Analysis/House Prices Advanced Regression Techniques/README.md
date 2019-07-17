@@ -21,6 +21,7 @@ ax.set(title="SalePrice distribution")
 sns.despine(trim=True, left=True)
 plt.show()
 ```
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/1.png">
 
 ### 3.分析某列数据的偏度和峰度
 
@@ -51,6 +52,8 @@ corr = train.corr()
 plt.subplots(figsize=(15,12))
 sns.heatmap(corr, vmax=0.9, cmap="Blues", square=True)
 ```
+
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/2.png">
 
 ### 5.提取数值型数据特征
 
@@ -88,7 +91,7 @@ for i, feature in enumerate(list(train[numeric]), 1):
 plt.show()
 ```
 
-图3
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/3.png">
 
 ### 7.分析各列数据与标签值的相关性（箱体图可视化）
 
@@ -100,7 +103,7 @@ fig = sns.boxplot(x=train['OverallQual'], y="SalePrice", data=data)
 fig.axis(ymin=0, ymax=800000);
 ```
 
-图4
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/4.png">
 
 ### 8.对非正态分布的标签值进行修正
 
@@ -168,7 +171,7 @@ ax.set(title="Percent missing data by feature")
 sns.despine(trim=True, left=True)
 ```
 
-图5
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/5.png">
 
 ### 13.填补缺失值
 
@@ -200,6 +203,8 @@ ax.set(xlabel="Numeric values")
 ax.set(title="Numeric Distribution of Features")
 sns.despine(trim=True, left=True)
 ```
+
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/6.png">
 
 ### 15.提取倾斜数据
 
@@ -236,7 +241,7 @@ ax.set(title="Numeric Distribution of Features")
 sns.despine(trim=True, left=True)
 ```
 
-图7
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/7.png">
 
 ### 17.产生新的数据特征
 
@@ -466,6 +471,8 @@ plt.title('Scores of Models', size=20)
 
 plt.show
 ```
+
+<img src="https://github.com/jm199504/Other-Notes/blob/master/Data-Analysis/House%20Prices%20Advanced%20Regression%20Techniques/images/8.png">
 
 ### 27.读取提交示范代码格式
 
