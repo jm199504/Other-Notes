@@ -53,6 +53,12 @@ Windows：
 
 ### 4.其他命令
 
-> 查看添加文件列表：git status 
+> 4.1 查看本地与Github repository目录差异：git status 
 >
-> 
+> 例如：
+>
+> 图1
+>
+> 解释：本地新建了Network-Optimizer文件夹，而Github repository中不存在该文件夹，建议添加&提交
+>
+> 4.2 查看文件差异：git diff
