@@ -84,5 +84,22 @@ Windows：
 > 使用git reflog 查看每次提交的commit_id（命令历史）
 >
 > git reset --hard commit_id
->
-> 
+
+后续进一步更新
+
+
+
+其他资料：
+
+图3
+
+
+
+图4
+
+
+
+
+
+参考来源：廖雪峰Git教程.pdf
+
