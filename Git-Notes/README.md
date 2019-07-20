@@ -57,7 +57,7 @@ Windows：
 >
 > 例如：
 >
-> 图1
+> <img src="https://github.com/jm199504/Other-Notes/blob/master/Git-Notes/images/1.png">
 >
 > 解释：本地新建了Network-Optimizer文件夹，而Github repository中不存在该文件夹，建议添加&提交
 >
@@ -65,7 +65,7 @@ Windows：
 >
 > 例如：
 >
-> 图2
+> <img src="https://github.com/jm199504/Other-Notes/blob/master/Git-Notes/images/2.png">
 >
 > 解释：本地修改了Git-Notes/README.md内容，其中红色表示删除行内容，绿色表示添加行内容
 >
@@ -91,11 +91,11 @@ Windows：
 
 其他资料：
 
-图3
+ <img src="https://github.com/jm199504/Other-Notes/blob/master/Git-Notes/images/3.png">
 
 
 
-图4
+ <img src="https://github.com/jm199504/Other-Notes/blob/master/Git-Notes/images/4.jpg">
 
 
 
