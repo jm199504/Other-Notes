@@ -53,7 +53,7 @@ Windows：
 
 ### 4.其他命令
 
-> 4.1 查看本地与Github repository目录差异：git status 
+> #### 4.1 查看本地与Github repository目录差异：git status 
 >
 > 例如：
 >
@@ -61,4 +61,28 @@ Windows：
 >
 > 解释：本地新建了Network-Optimizer文件夹，而Github repository中不存在该文件夹，建议添加&提交
 >
-> 4.2 查看文件差异：git diff
+> #### 4.2 查看文件内具体差异：git diff
+>
+> 例如：
+>
+> 图2
+>
+> 解释：本地修改了Git-Notes/README.md内容，其中红色表示删除行内容，绿色表示添加行内容
+>
+> #### 4.3 查看日志
+>
+> 多行显示一次更新：git log（提交历史）
+>
+> 单行显示一次更新：git log --pretty=oneline
+>
+> #### 4.4 回滚至历史版本
+>
+> git reset --hard HEAD^ 
+>
+> 注意：HEAD^表示前次版本；HEAD^^表示前前版本；HEAD~N表示前N次版本
+>
+> 使用git reflog 查看每次提交的commit_id（命令历史）
+>
+> git reset --hard commit_id
+>
+> 
