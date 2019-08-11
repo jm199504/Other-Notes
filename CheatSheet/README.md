@@ -172,5 +172,27 @@ import warnings
 warnings.filterwarnings(action="ignore")
 ```
 
-### 6.
+### 6.Skleanr自带的数据库
+```
+from sklearn import datasets, model_selection, naive_bayes
 
+def load_data(datasets_name='iris'):
+    if datasets_name == 'iris':
+        data = datasets.load_iris()  # 加载 scikit-learn 自带的 iris 鸢尾花数据集-分类
+    elif datasets_name == 'wine': # 0.18.2 没有
+        data = datasets.load_wine()  # 加载 scikit-learn 自带的 wine 红酒起源数据集-分类
+    elif datasets_name == 'cancer':
+        data = datasets.load_breast_cancer()  # 加载 scikit-learn 自带的 乳腺癌数据集-分类
+    elif datasets_name == 'digits':
+        data = datasets.load_digits()  # 加载 scikit-learn 自带的 digits 糖尿病数据集-回归
+    elif datasets_name == 'boston':
+        data = datasets.load_boston()  # 加载 scikit-learn 自带的 boston 波士顿房价数据集-回归
+    else:
+        pass
+    return model_selection.train_test_split(data.data, data.target,test_size=0.25, random_state=0,stratify=data.target)
+ # 分层采样拆分成训练集和测试集，测试集大小为原始数据集大小的 1/4
+
+dataset = load_data('iris')
+
+print(datasets)
+```
