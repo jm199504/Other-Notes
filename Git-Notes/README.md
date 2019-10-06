@@ -87,8 +87,11 @@ Windows：
 
 > #### 4.5 删除Github上某一个文件夹
 > git pull origin master      拉取远程仓库文件夹及文件
+>
 > dir                         查看有文件夹及文件
+>
 > git rm -r --cached a        删除a文件夹
+>
 > git commit -m 'del a'       提交及备注
 
 
