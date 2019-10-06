@@ -85,8 +85,11 @@ Windows：
 >
 > git reset --hard commit_id
 
-后续进一步更新
-
+> #### 4.5 删除Github上某一个文件夹
+> git pull origin master      拉取远程仓库文件夹及文件
+> dir                         查看有文件夹及文件
+> git rm -r --cached a        删除a文件夹
+> git commit -m 'del a'       提交及备注
 
 
 其他资料：
@@ -94,12 +97,7 @@ Windows：
  <img src="https://github.com/jm199504/Other-Notes/blob/master/Git-Notes/images/3.png">
 
 
-
  <img src="https://github.com/jm199504/Other-Notes/blob/master/Git-Notes/images/4.jpg">
 
 
-
-
-
 参考来源：廖雪峰Git教程.pdf
-
